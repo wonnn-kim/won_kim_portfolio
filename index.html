@@ -29,7 +29,9 @@
 </head>
 
 <body>
+    <div id="particles-js"></div>
     <header>
+         <img src="img/cout.png" alt="cout" class="cout-logo" />
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
@@ -57,6 +59,17 @@
         <p class="section__subtitle section__subtitle--intro">Rendering Engine / Graphics Engine Programmer</p>
         <img src="img/face.jpg" alt="a picture of Won Kim smiling" class="intro__img" />
     </section>
+
+    <!-- particles.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+        particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('particles.json loaded');
+        });
+    });
+    </script>
+
 
     <!-- My Services -->
     <section class="my-services" id="skills">
@@ -126,7 +139,7 @@ As an aspiring technical game developer, I am interested in environments where c
             A selection of my range of projects... </br>
             will be updated
         </p>
-        <!-- <div class="portfolio">
+        <div class="portfolio">
             <a href="portfolio/01_hello.html" class="portfolio__item">
                 <img src="img/portfolio_thumbnails/01_hello.jpg" alt="" class="portfolio__img" />
             </a>
@@ -147,7 +160,7 @@ As an aspiring technical game developer, I am interested in environments where c
             </a>
             <a href="portfolio/07_gradient.html" class="portfolio__item">
                 <img src="img/portfolio_thumbnails/07_gradient.jpg" alt="" class="portfolio__img" />
-            </a> -->
+            </a>
             
 
         </div>
@@ -232,6 +245,7 @@ As an aspiring technical game developer, I am interested in environments where c
     </footer>
 
     <script src="js/index.js"></script>
+    
 </body>
 
 </html>
