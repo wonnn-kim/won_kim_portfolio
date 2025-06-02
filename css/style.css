@@ -279,36 +279,45 @@ header {
 .section__subtitle--intro {
   display: inline-block;
 }
-
 @media (min-width: 600px) {
   .intro {
     display: grid;
-    width: min-content;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 2em;
     margin: 0 auto;
-    column-gap: 1em;
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content;
   }
 
   .intro__img {
-    grid-area: img;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    align-self: start;
+    justify-self: start;
     min-width: 250px;
     position: relative;
     z-index: 2;
   }
 
+  .section__title--intro {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: end;
+  }
+
   .section__subtitle--intro {
-    align-self: start;
-    grid-column: -1/1;
+    grid-column: 2;
     grid-row: 2;
-    text-align: right;
+    align-self: start;
+    width: max-content;
     position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
+    z-index: 3;
+    background: var(--clr-accent);
+    padding: 0.25em 1em;
+    font-family: var(--ff-secondary);
+    margin-bottom: 1em;
   }
 }
+
 
 /* my services section */
 
