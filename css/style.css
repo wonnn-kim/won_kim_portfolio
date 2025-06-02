@@ -306,8 +306,8 @@ header {
 
   .section__subtitle--intro {
     grid-column: 2;
-    grid-row: 2;
-    text-align: right;
+    grid-row: 3;
+    
     align-self: start;
     width: max-content;
     position: relative;
