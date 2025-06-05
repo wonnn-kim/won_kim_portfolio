@@ -10,7 +10,7 @@
 
     <!-- Help auto scale for desktop & mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Won Kim Website</title>
+    <title>Won Kim Hello Quad</title>
 
     <!-- Normalize the difference across browsers  https://necolas.github.io/normalize.css/ -->
     <link rel="stylesheet" href="../external/normalize.css">
@@ -69,22 +69,27 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p> Make Vertex which is animated motion and colors, and take input of the mouse position.</p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Implemented an animated OpenGL demo (D01HelloQuad) using C++ and GLSL as part of CS250 Computer Graphics II course.</li>
+            <li>Designed a vertex shader that animates the quad's position, scale, and rotation based on time and mouse position.</li>
+            <li>Created a fragment shader that dynamically blends vertex colors with texture samples using time-varying color intensity.</li>
+            <li>Used uniform variables to control animation parameters like uTime, uMousePosition, and uResolution.</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>
+            This project provided opportunity to explore shader programming and animation logic in OpenGL.
+            One of the main challenges was synchronizing GPU-side shader variables (time and mouse input) with CPU-side application state.
+            I also learned how to properly manage Index and Vertex Buffers and Arrays.
+        </p>
     </div>
 
     <div class="portfolio-item-individual">
         <h2>Demo</h2>
-        <!-- TODO demo the webgl version of the project -->
+        <!-- demo the webgl version of the project -->
         <iframe id="demo" src="../webgl/D01HelloQuad/graphics_fun.html"></iframe>
     </div>
 
