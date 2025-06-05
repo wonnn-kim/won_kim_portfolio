@@ -69,17 +69,19 @@
 
     <div class="portfolio-item-individual">
         <h2>Project Overview</h2>
-        <p>Provide a brief description of the project, its purpose, and what you aimed to achieve.</p>
+        <p>This project implements a fog rendering technique in OpenGL.
+            The main goal was to simulate atmospheric effects by fading distant objects into a fog color based on camera depth.</p>
 
         <h2>Tasks Completed</h2>
         <ul>
-            <li>Describe the tasks you completed for this project.</li>
-            <li>Be specific about your contributions and the technologies used.</li>
+            <li>Integrated fog rendering using vertex and fragment shaders by calculating the eye-space depth and applying a smoothstep-based fog blend.</li>
+            <li>Modified the fragment shader to interpolate between the object’s texture color and the fog color based on distance.</li>
         </ul>
 
         <h2>Reflection</h2>
-        <p>Reflect on the project, discussing any challenges faced, solutions implemented, and what you learned from the
-            experience.</p>
+        <p>Calculating the fog depth blended smoothly with distant geometry without affecting close-up textures was quite challenging,
+            but could understand shader programming pipeline and how camera space and depth values affect visual outcomes.
+        </p>
     </div>
 
     <div class="portfolio-item-individual">
